@@ -1,0 +1,28 @@
+{
+  "name": "julgado-pela-capa",
+  "version": "1.0.0",
+  "description": "Análise das publicações de livros pelas principais editoras do Brasil. Questões racias, cultura, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willmustafa/julgado-pela-capa.git"
+  },
+  "author": "willian mustafa<willianfmustafa@gmail.com>",
+  "license": "APACHE-2",
+  "bugs": {
+    "url": "https://github.com/willmustafa/julgado-pela-capa/issues"
+  },
+  "homepage": "https://github.com/willmustafa/julgado-pela-capa#readme",
+  "dependencies": {
+    "puppeteer": "^15.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
