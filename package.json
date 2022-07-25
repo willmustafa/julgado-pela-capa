@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/willmustafa/julgado-pela-capa#readme",
   "dependencies": {
-    "puppeteer": "^15.5.0"
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "pg": "^8.7.3",
+    "progress": "^2.0.3",
+    "puppeteer": "^15.5.0",
+    "sequelize": "^6.21.3"
   },
   "devDependencies": {
     "eslint": "^8.20.0",
