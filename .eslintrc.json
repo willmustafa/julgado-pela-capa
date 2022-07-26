@@ -4,10 +4,26 @@
         "es2021": true,
         "node": true
     },
+    "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaVersion": "latest"
     },
     "rules": {
-        "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"]
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
     }
 }

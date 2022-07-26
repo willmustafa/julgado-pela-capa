@@ -1,28 +1,33 @@
-require("dotenv").config();
+require('dotenv').config();
 const puppeteer = require('puppeteer');
 const editoras = require('./configs/editoras');
-const ProgressBar = require('progress');
-require("./database/sync");
+require('./database/sync');
+const args = process.argv.slice(2);
+const customFunctions = require('./database/customFunctions');
 
 (async () => {
-  const browser = await puppeteer.launch({headless: false});
-  const page = await browser.newPage();
-  // await page.setRequestInterception(true);
-  // page.on('request', (request) => {
-  //   if (['image', 'stylesheet', 'font', 'script'].indexOf(request.resourceType()) !== -1) {
-  //       request.abort();
-  //   } else {
-  //       request.continue();
-  //   }
-  // });
 
-  const MainBar = new ProgressBar(`Integrando a editora :current de :total`, {total: editoras.length})
+	await customFunctions();
+
+	if(args.includes('--scrapper')){
+		const browser = await puppeteer.launch({headless: false});
+		const page = await browser.newPage();
   
-  for await (const editora of editoras) {
-    MainBar.tick()
-    
-    await require(`./controller/${editora.editora}.js`)(page, editora)
-  }
+		for await (const editora of editoras) { 
+			await require(`./controller/editoras/${editora.editora}.js`)(page, editora);
+		}
+  
+		await browser.close();
+	}
 
-  await browser.close();
+	if(args.includes('--isbn')){
+		await require('./controller/isbn/isbnApi')();
+	}
+
+	if(args.includes('--sql-format')){
+		await require('./utils/formatSQL')();
+	}
+
+	process.exit();
+
 })();
