@@ -6,7 +6,6 @@ const args = process.argv.slice(2);
 const customFunctions = require('./database/customFunctions');
 
 (async () => {
-
 	await customFunctions();
 
 	if(args.includes('--scrapper')){

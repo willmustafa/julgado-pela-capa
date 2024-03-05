@@ -1,10 +1,18 @@
 const editoras = [
 	{
 		editora: 'companhia-das-letras',
+		type: 'api',
+		with_cookies: true,
+		intercept: true,
 		url: 'https://www.companhiadasletras.com.br/Busca?ordem=cronologica',
 		book_url: 'https://www.companhiadasletras.com.br/livro/',
 		query_ano: '&ano=',
 		query_ano_min: 1985,
+		api: {
+			url: 'https://www.companhiadasletras.com.br/Busca?ordem=cronologica',
+			type: 'POST',
+			cookie: ['ciaSession', 'info'],
+		}
 	},
 	// {
 	// 	editora: 'rocco',

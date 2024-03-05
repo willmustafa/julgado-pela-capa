@@ -32,3 +32,7 @@ API ISBN
 http://openlibrary.org/api/books?bibkeys=ISBN:9788571103894&jscmd=details&format=json
 
 https://isbndb.com/apidocs/v2
+
+# Como usar
+
+`npm run start`

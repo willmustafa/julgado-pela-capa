@@ -10,7 +10,6 @@ WITH DATA;
 `;
 
 const execute = async () => {
-
 	await database.query(autor_list).then(res => console.log(res)).catch(() => {});
 };
 
