@@ -1,12 +1,9 @@
 import 'dotenv/config'
-import Scraper from './service/Scrapper';
-import { publishers } from './core/entities/PublisherConfig';
+import { dbClient, init } from './repository/db.repository'
+import { scrapGrupoPensamento } from './modules/grupopensamento'
 
-(async () => {
-    const scrapper = new Scraper()
-    await scrapper.initialize()
+;(async () => {
+  await init()
 
-    for (const publisher of publishers) {
-        await scrapper.scrape(publisher)
-    }
-})();
+  await scrapGrupoPensamento()
+})()
