@@ -6,14 +6,13 @@ Inspirado pelo site: https://judgingbythecover.com/
 
 Lista de editoras:
 
-- [ ] https://www.grupopensamento.com.br/
-- [ ] https://www.editoramelhoramentos.com/
-- [X] https://www.moderna.com.br/
+- [X] https://www.grupopensamento.com.br/
+- [ ] https://www.moderna.com.br/
 - [ ] https://www.escala.com.br/
-- [X] http://martinclaret.com.br/
+- [ ] http://martinclaret.com.br/
 - [ ] https://www.editoragente.com.br/
 - [ ] https://editoradraco.com/
-- [X] https://www.record.com.br/
+- [ ] https://www.record.com.br/
 - [ ] http://www.loyola.com.br/
 - [ ] https://www.chiadobooks.com/
 - [ ] https://editoraaleph.com.br/
@@ -22,10 +21,10 @@ Lista de editoras:
 - [ ] https://www.pandabooks.com.br/
 - [ ] https://www.ediouro.com.br/
 - [ ] https://sextante.com.br/
-- [X] https://www.intrinseca.com.br/#modal
-- [X] https://www.editoraarqueiro.com.br/
-- [X] https://www.rocco.com.br/
-- [X] https://www.companhiadasletras.com.br/Busca
+- [ ] https://www.intrinseca.com.br/#modal
+- [ ] https://www.editoraarqueiro.com.br/
+- [ ] https://www.rocco.com.br/
+- [ ] https://www.companhiadasletras.com.br/Busca
 
 API ISBN
 
