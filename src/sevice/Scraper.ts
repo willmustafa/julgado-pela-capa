@@ -1,18 +1,23 @@
 import axios, { AxiosRequestConfig } from 'axios'
 import { load } from 'cheerio'
+import { USER_AGENTS } from '../helpers/userAgents'
 
 export class Scraper {
   constructor() {}
 
   async loadPage(url: string) {
     return axios
-      .get(url, { timeout: 1000 })
+      .get(url, {
+        timeout: 6000,
+        headers: {
+          'User-Agent': USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)]
+        }
+      })
       .then((response) => {
         const body = response.data
         return load(body)
       })
       .catch((err) => {
-        console.error('err')
         return Promise.reject(err)
       })
   }
@@ -24,7 +29,6 @@ export class Scraper {
         return response.data
       })
       .catch((err) => {
-        console.error('err2')
         return Promise.reject(err)
       })
   }
