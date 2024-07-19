@@ -8,7 +8,7 @@ Lista de editoras:
 
 - [X] https://www.grupopensamento.com.br/
 - [X] https://www.moderna.com.br/
-- [ ] https://www.escala.com.br/
+- [X] https://www.escala.com.br/
 - [ ] http://martinclaret.com.br/
 - [ ] https://www.editoragente.com.br/
 - [ ] https://editoradraco.com/
