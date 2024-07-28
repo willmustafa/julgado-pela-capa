@@ -5,7 +5,7 @@ import { USER_AGENTS } from '../helpers/userAgents'
 export class Scraper {
   constructor() {}
 
-  async loadPage(url: string) {
+  async loadPage(url: string, options: AxiosRequestConfig = { timeout: 1000 }) {
     return axios
       .get(url, {
         timeout: 6000,

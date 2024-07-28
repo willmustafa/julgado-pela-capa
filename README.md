@@ -16,14 +16,13 @@ Lista de editoras:
 - [ ] http://www.loyola.com.br/
 - [ ] https://www.chiadobooks.com/
 - [ ] https://editoraaleph.com.br/
-- [ ] https://altabooks.com.br/
+- [ ] https://altabooks.com.br/ -> wordpress -> https://altabooks.com.br/wp-json/wc/store/products
 - [ ] https://www.ubueditora.com.br/
 - [ ] https://www.pandabooks.com.br/
-- [ ] https://www.ediouro.com.br/
 - [ ] https://sextante.com.br/
-- [ ] https://www.intrinseca.com.br/#modal
+- [ ] https://www.intrinseca.com.br/#modal -> Wordpress acesso restrito
 - [ ] https://www.editoraarqueiro.com.br/
-- [ ] https://www.rocco.com.br/
+- [ ] https://www.rocco.com.br/ -> Wordpress ->https://rocco.com.br/wp-json/wp/v2/product -> sem isbn na api
 - [ ] https://www.companhiadasletras.com.br/Busca
 
 API ISBN
